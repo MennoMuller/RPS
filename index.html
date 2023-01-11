@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple game of rock paper scissors" />
+    <meta name="author" content="Menno Muller" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="game-wrapper">
+            <h2 class="text-white">Make your move</h2>
+            <div class="player-vs-pc-flex">
+              <div class="player-option-flex">
+                <div
+                  class="option-wrapper"
+                  title="Rock"
+                  onclick="letsPlay('Rock')"
+                >
+                  <img src="img/rock.svg" alt="option rock" />
+                </div>
+                <div
+                  class="option-wrapper"
+                  title="Paper"
+                  onclick="letsPlay('Paper')"
+                >
+                  <img src="img/paper.svg" alt="option paper" />
+                </div>
+                <div
+                  class="option-wrapper"
+                  title="Scissors"
+                  onclick="letsPlay('Scissors')"
+                >
+                  <img src="img/scissors.svg" alt="option scissors" />
+                </div>
+              </div>
+              <div class="vs-wrapper">
+                <h2>VS</h2>
+              </div>
+              <div class="option-wrapper pc-wrapper" id="pc-wrapper">
+                <div>Make your choice</div>
+              </div>
+            </div>
+
+            <div class="outcome-wrapper">
+              <div>user</div>
+              <div class="outcome-big" id="player-value">Player Value</div>
+              <div class="outcome-big" id="action">Action</div>
+              <div>comp</div>
+              <div class="outcome-big" id="pc-value">Pc value</div>
+              <div class="outcome-big" id="outcome">Outcome</div>
+            </div>
+
+            <div class="score-wrapper">
+              <div id="player-score">0</div>
+              <div>:</div>
+              <div id="pc-score">0</div>
+              <div class="player-name">User</div>
+              <div class="player-name comp-name">Comp</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

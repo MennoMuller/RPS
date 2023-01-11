@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+}
+
+body {
+  font-size: 20px;
+  line-height: 1.32;
+  font-family: "Open Sans", sans-serif;
+  color: #44414d;
+  background-color: #fefefe;
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 80px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.04;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.text-white {
+  color: white;
+}
+
+.game-wrapper {
+  background-color: #44414d;
+  max-width: 1200px;
+  padding: 40px 48px;
+}
+
+.player-vs-pc-flex {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.player-option-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.option-wrapper {
+  margin: 0 12px;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: solid 6px white;
+  cursor: pointer;
+}
+
+.option-wrapper:hover {
+  border: solid 6px #00e2a8;
+}
+
+.pc-wrapper {
+  border: solid 6px black;
+  border-radius: 0%;
+  background-color: #313034;
+  text-align: center;
+  color: white;
+}
+
+.pc-wrapper:hover {
+  border: solid 6px black;
+  cursor: auto;
+}
+
+.option-wrapper > img {
+  width: 80%;
+  height: 80%;
+}
+
+.outcome-wrapper {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.outcome-wrapper > div {
+  display: inline;
+  width: 400px;
+}
+
+.outcome-big {
+  font-size: 32px;
+  line-height: 32px;
+  padding: 0 6px;
+}
+
+#action,
+#outcome {
+  color: #00c592;
+}
+
+.score-wrapper {
+  margin: 0 24px;
+  width: 180px;
+  padding: 12px 24px;
+  border: solid 4px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 32px;
+  color: white;
+  position: relative;
+}
+
+.player-name {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 6px 0;
+  width: 48px;
+  text-align: center;
+  background-color: #00cd98;
+  position: absolute;
+  left: -24px;
+}
+
+.comp-name {
+  background-color: #136a65;
+  left: auto;
+  right: -24px;
+}
